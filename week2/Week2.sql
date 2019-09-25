@@ -16,7 +16,7 @@ SELECT firstName,
 LEFT(firstName,1) AS 'First Initial',
 LOWER(LEFT(firstName,1)) AS 'Lower First Initial'
 FROM Person
-WHERE CHARINDEX('P',lastName)>0
+WHERE SUBSTRING(lastName,1,1)='P'
 
 print '*** Question 3 ***'
 Print ''
@@ -25,6 +25,7 @@ SELECT lastName,
 SUBSTRING(lastName,1,7) AS 'First Seven',
 LOWER(SUBSTRING(lastName,1,7)) AS 'Lower First Seven'
 FROM Person
+WHERE SUBSTRING(lastName,1,1)='P'
 ORDER BY lastName ASC
 
 print '*** Question 4 ***'
@@ -59,7 +60,8 @@ SELECT 'Employee Number: '+Employee.number ,
 		'Year: '+CONVERT(varchar(4),YEAR(birthdate)),
 		'MOnth: '+CONVERT(varchar(2),MONTH(birthdate)),
 		'Day: '+CONVERT(varchar(2),Day(birthdate))
-FROM Employee,Person
+FROM Employee,Person 
+WHERE Employee.number=Person.number
 ORDER BY birthdate ASC
 
 print '*** Question 7b ***'
@@ -70,4 +72,5 @@ SELECT 'Employee Number: '+Employee.number ,
 		'MOnth: '+CONVERT(varchar(2),DATEPART(MM,birthdate)),
 		'Day: '+CONVERT(varchar(2),DATEPART(DD,birthdate))
 FROM Employee,Person
+WHERE Employee.number=Person.number
 ORDER BY birthdate ASC
