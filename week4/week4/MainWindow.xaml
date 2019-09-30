@@ -1,0 +1,21 @@
+﻿<Window x:Class="week4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:week4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="penny" Content="Penny" HorizontalAlignment="Left" Margin="65,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="nickel" Content="Nickel" HorizontalAlignment="Left" Margin="64,106,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.436,0.429"/>
+        <Label x:Name="dime" Content="Dime" HorizontalAlignment="Left" Margin="69,155,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="quarter" Content="Quarter" HorizontalAlignment="Left" Margin="56,208,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="penNum" HorizontalAlignment="Left" Height="23" Margin="148,60,0,0" TextWrapping="Wrap" Text="{Binding getPenny}" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nicNum" HorizontalAlignment="Left" Height="23" Margin="148,106,0,0" TextWrapping="Wrap" Text="{Binding getNikel}" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="dimNum" HorizontalAlignment="Left" Height="23" Margin="148,159,0,0" TextWrapping="Wrap" Text="{Binding getDime}" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="qutNum" HorizontalAlignment="Left" Height="23" Margin="148,212,0,0" TextWrapping="Wrap" Text="{Binding getQuarter}" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Dollar" Content="1 dollar?" HorizontalAlignment="Left" Margin="335,344,0,0" VerticalAlignment="Top" Width="75" Click="Dollar_Click"/>
+
+    </Grid>
+</Window>
