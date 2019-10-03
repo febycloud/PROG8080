@@ -33,7 +33,7 @@ Print ''
 
 SELECT LOWER(LEFT(firstName,1))+LOWER(SUBSTRING(lastName,1,7)) AS 'User ID'
 FROM Person
-WHERE CHARINDEX('P',lastName)>0
+WHERE SUBSTRING(lastName,1,1)='P'
 ORDER BY firstName ASC
 
 print '*** Question 5 ***'

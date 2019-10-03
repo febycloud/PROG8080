@@ -88,9 +88,6 @@ PUOTINEN                                           PUOTINE     puotine
  
 User ID
 --------
-adeponte
-awittrup
-bthompso
 bpayer
 bpentari
 cpackebu
@@ -101,34 +98,24 @@ dpieczyn
 dpippert
 dpaglio
 dprieto
-ezippere
 fpotes
 gpillai
 hpeyton
 hpanchan
-jcampion
 jparmele
-jcrudup
 jparker
-ksupino
-lkapper
 lpartido
 mpalafox
 mpanchal
 mprichar
-nspratt
-ndhyanap
-obaptist
 rpandita
-rcampagn
 rpryor
 spartin
-ssengupt
 tprvitt
 tpergola
 tpuotine
 
-(39 rows affected)
+(26 rows affected)
 
 *** Question 5 ***
  
@@ -193,4 +180,4 @@ Employee Number: 2117745 Year: 1984 MOnth: 10 Day: 11
 (14 rows affected)
 
 
-Completion time: 2019-09-25T16:03:23.7729010-04:00
+Completion time: 2019-09-25T16:17:34.8920290-04:00
